@@ -17,6 +17,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
 * ![DevExpress](https://img.shields.io/badge/DevExpress-FF7200?style=for-the-badge&logo=devexpress&logoColor=white)
+* ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
