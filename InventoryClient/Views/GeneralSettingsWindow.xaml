@@ -1,0 +1,60 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventoryClient.Views"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" x:Class="InventoryClient.Views.GeneralSettingsWindow"
+        mc:Ignorable="d"
+        Title="GeneralSettingsWindow" 
+        Height="450" 
+        Width="800"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <dx:DXTabControl>
+            <dx:DXTabItem Header="System Settings">
+                <Grid Background="#00000000">
+                    <Label Content="Database Path" HorizontalAlignment="Left" Margin="21,26,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Company Name" HorizontalAlignment="Left" Margin="21,62,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.7,-0.316" Width="626"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,62,0,0" VerticalAlignment="Top" Width="244"/>
+                    <Label Content="Foreign Name" HorizontalAlignment="Left" Margin="378,62,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="495,62,0,0" VerticalAlignment="Top" Width="253"/>
+                    <Label Content="Company Address" HorizontalAlignment="Left" Margin="21,99,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,99,0,0" VerticalAlignment="Top" Width="244"/>
+                    <Label Content="Foreign Cmpny Add." HorizontalAlignment="Left" Margin="378,99,0,0" VerticalAlignment="Top" Width="139"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="495,99,0,0" VerticalAlignment="Top" Width="253"/>
+                    <Label Content="Phone Number" HorizontalAlignment="Left" Margin="21,136,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,136,0,0" VerticalAlignment="Top" Width="244"/>
+                    <Label Content="Mobile Number" HorizontalAlignment="Left" Margin="378,136,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="495,136,0,0" VerticalAlignment="Top" Width="253"/>
+                    <Label Content="VAT" HorizontalAlignment="Left" Margin="21,170,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,170,0,0" VerticalAlignment="Top" Width="244"/>
+                    <Label Content="Registration Number" HorizontalAlignment="Left" Margin="378,170,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="495,170,0,0" VerticalAlignment="Top" Width="253"/>
+                    <Label Content="E-Mail" HorizontalAlignment="Left" Margin="21,208,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,208,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.7,-0.316" Width="626"/>
+                    <Label Content="Company Logo" HorizontalAlignment="Left" Margin="21,247,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.7,-0.316" Width="626"/>
+                </Grid>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="Inventory Settings">
+                <Grid Background="#00000000"/>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="Restaurants Settings">
+                <Grid Background="#00000000"/>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="Pharmacy Settings">
+                <Grid Background="#00000000"/>
+            </dx:DXTabItem>
+            <dx:DXTabItem Header="Image Slider">
+                <Grid Background="#00000000">
+                    <dxlc:GroupBox HorizontalAlignment="Center" VerticalAlignment="Center" Height="364" Width="754" Header="Custom Main Image Slider"/>
+                </Grid>
+            </dx:DXTabItem>
+        </dx:DXTabControl>
+
+    </Grid>
+</Window>

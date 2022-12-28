@@ -1,0 +1,228 @@
+﻿<Window xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon" xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" x:Class="InventoryClient.MainWindow"
+        mc:Ignorable="d"
+        Title="Inventory Client" Height="1000" Width="1200"
+        WindowState="Normal"
+        ResizeMode="NoResize">
+    <Grid>
+        <dxr:RibbonControl 
+        RibbonStyle="Office2019" 
+        Height="158"
+        ShowApplicationButton="False" ToolbarShowMode="Hide" AllowSimplifiedRibbon="False">
+
+            <dxr:RibbonPageCategory>
+                <dxr:RibbonPage Caption="Settings">
+
+                    <dxr:RibbonPageGroup Caption="">
+
+                        <dxb:BarButtonItem x:Name="btn_generalSettings" 
+                                           ItemClick="btn_generalSettings_ItemClick" 
+                                           Content="General Settings" 
+                                           RibbonStyle="Large" 
+                                           Glyph="/Resources/System/generalsettings1.png"/>
+
+                        <dxb:BarButtonItem x:Name="btn_paymentMethods" Cursor="Hand" Content="Payment Methods" RibbonStyle="Large" Glyph="/Resources/System/paymentmethods1.png"/>
+                        <dxb:BarButtonItem x:Name="btn_taxes" Cursor="Hand" Content="Taxes" RibbonStyle="Large" Glyph="/Resources/System/taxes1.png"/>
+                        <dxb:BarButtonItem x:Name="btn_visitWebsite" Cursor="Hand" Content="Visit Website" RibbonStyle="Large" Glyph="/Resources/System/visitwebsite1.png"/>
+                    </dxr:RibbonPageGroup>
+
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem x:Name="btn_sqlEditor" Content="SQL Editor" RibbonStyle="Large" Glyph="/Resources/System/sqleditor1.png"/>
+                    </dxr:RibbonPageGroup>
+
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem x:Name="btn_activateLicense" Content="Activate License" RibbonStyle="Large" Glyph="/Resources/System/activatelicense1.png"/>
+                    </dxr:RibbonPageGroup>
+
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem x:Name="btn_contactUs" Content="Contact Us" RibbonStyle="Large" Glyph="/Resources/System/contactus1.png"/>
+                    </dxr:RibbonPageGroup>
+
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem x:Name="btn_help" Content="Help" RibbonStyle="Large" Glyph="/Resources/System/help1.png"/>
+                    </dxr:RibbonPageGroup>
+
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem x:Name="btn_language" Content="Language" RibbonStyle="Large" Glyph="/Resources/System/language1.png"/>
+                    </dxr:RibbonPageGroup>
+
+                </dxr:RibbonPage>
+
+            </dxr:RibbonPageCategory>
+
+
+            <dxr:RibbonPageCategory>
+                <dxr:RibbonPage Caption="Inventory">
+
+                    <dxr:RibbonPageGroup Caption="Categories">
+                        <dxb:BarButtonItem x:Name="btn_categoryLevel1" Content="Category Level 1" RibbonStyle="SmallWithText"/>
+                        <dxb:BarButtonItem x:Name="btn_categoryLevel2" Content="Category Level 2" RibbonStyle="SmallWithText"/>
+                        <dxb:BarButtonItem x:Name="btn_categoryLevel3" Content="Category Level 3" RibbonStyle="SmallWithText"/>
+                    </dxr:RibbonPageGroup>
+
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem x:Name="btn_items" Content="Items" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem x:Name="btn_units" Content="Units" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem x:Name="btn_barcodeDesign" Content="Barcode Design" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem x:Name="btn_barcodeScale" Content="Barcode Scale" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem x:Name="btn_stockTaking" Content="StockTaking" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+
+                    <dxr:RibbonPageGroup Caption="">
+                        <dxb:BarButtonItem x:Name="btn_damagedStock" Content="Damaged Stock" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+
+                </dxr:RibbonPage>
+            </dxr:RibbonPageCategory>
+
+
+            <dxr:RibbonPageCategory>
+                <dxr:RibbonPage Caption="Purchase">
+
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+
+                </dxr:RibbonPage>
+            </dxr:RibbonPageCategory>
+
+            <dxr:RibbonPageCategory>
+                <dxr:RibbonPage Caption="Sales">
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                </dxr:RibbonPage>
+            </dxr:RibbonPageCategory>
+            <dxr:RibbonPageCategory>
+                <dxr:RibbonPage Caption="Vouchers">
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                </dxr:RibbonPage>
+            </dxr:RibbonPageCategory>
+            <dxr:RibbonPageCategory>
+                <dxr:RibbonPage Caption="Reports">
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarCheckItem Content="BarCheckItem" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                </dxr:RibbonPage>
+            </dxr:RibbonPageCategory>
+            <dxr:RibbonPageCategory>
+                <dxr:RibbonPage Caption="Security">
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarButtonItem Content="BarButtonItem" RibbonStyle="Large"/>
+                    </dxr:RibbonPageGroup>
+                </dxr:RibbonPage>
+            </dxr:RibbonPageCategory>
+            <dxr:RibbonPageCategory/>
+
+
+
+        </dxr:RibbonControl>
+
+        <!-- Left Side -->
+        <dx:SimpleButton x:Name="btn_dailySales" HorizontalAlignment="Left" Margin="30,206,0,0" VerticalAlignment="Top" Height="48" Width="80" Glyph="/Resources/System/dailysales1.png" GlyphAlignment="Top" BorderThickness="0,0,0,0" />
+        <Label Content="Daily Sales" HorizontalAlignment="Left" Margin="131,219,0,0" VerticalAlignment="Top"/>
+
+        <dx:SimpleButton x:Name="btn_dailyPurchase" HorizontalAlignment="Left" Margin="30,259,0,0" VerticalAlignment="Top" Height="48" Width="80" Glyph="/Resources/System/dailypurchase1.png" GlyphAlignment="Top" BorderThickness="0,0,0,0" />
+        <Label Content="Daily Purchase" HorizontalAlignment="Left" Margin="131,267,0,0" VerticalAlignment="Top"/>
+
+        <dx:SimpleButton x:Name="btn_itemsSales" HorizontalAlignment="Left" Margin="30,312,0,0" VerticalAlignment="Top" Height="48" Width="80" Glyph="/Resources/System/itemssale1.png" GlyphAlignment="Top" BorderThickness="0,0,0,0"/>
+        <Label Content="Items Sales" HorizontalAlignment="Left" Margin="131,325,0,0" VerticalAlignment="Top"/>
+
+        <dx:SimpleButton x:Name="btn_itemsPurchase" HorizontalAlignment="Left" Margin="30,364,0,0" VerticalAlignment="Top" Height="48" Width="80" Glyph="/Resources/System/itemspurchase1.png" GlyphAlignment="Top" BorderThickness="0,0,0,0"/>
+        <Label Content="Items Purchase" HorizontalAlignment="Left" Margin="131,377,0,0" VerticalAlignment="Top"/>
+
+        <dx:SimpleButton x:Name="btn_salesByMonth" HorizontalAlignment="Left" Margin="30,416,0,0" VerticalAlignment="Top" Height="48" Width="80" Glyph="/Resources/System/salesbymonth1.png" GlyphAlignment="Top" BorderThickness="0,0,0,0"/>
+        <Label Content="Sales By Month" HorizontalAlignment="Left" Margin="131,429,0,0" VerticalAlignment="Top"/>
+
+        <dx:SimpleButton x:Name="btn_salesByDay" HorizontalAlignment="Left" Margin="30,467,0,0" VerticalAlignment="Top" Height="48" Width="80" Glyph="/Resources/System/salesbyday1.png" GlyphAlignment="Top" BorderThickness="0,0,0,0"/>
+        <Label Content="Sales By Day" HorizontalAlignment="Left" Margin="131,480,0,0" VerticalAlignment="Top"/>
+
+        <dx:SimpleButton HorizontalAlignment="Left" Margin="30,519,0,0" VerticalAlignment="Top" Width="80" Height="67" Glyph="/Resources/System/shield1.png" BorderThickness="0,0,0,0"/>
+        <Label Content="System Security" HorizontalAlignment="Left" Margin="131,542,0,0" VerticalAlignment="Top"/>
+
+        <dxe:ImageEdit x:Name="img_InventoryClient" HorizontalAlignment="Left" Margin="394,206,0,0" VerticalAlignment="Top" Height="361" Width="736"/>
+
+        <!-- Right Side -->
+        <dx:SimpleButton x:Name="btn_dashboard" HorizontalAlignment="Left" Margin="38,667,0,0" VerticalAlignment="Top" Height="53" Width="75" Glyph="/Resources/System/dashboard1.png" BorderThickness="0,0,0,0"/>
+        <Label Content="Dashboard" HorizontalAlignment="Left" Margin="131,680,0,0" VerticalAlignment="Top"/>
+
+        <dx:SimpleButton x:Name="btn_cashDrawer" HorizontalAlignment="Left" Margin="38,727,0,0" VerticalAlignment="Top" Height="53" Width="75" Glyph="/Resources/System/cashdrawer1.png" BorderThickness="0,0,0,0"/>
+        <Label Content="Cash Drawer" HorizontalAlignment="Left" Margin="131,745,0,0" VerticalAlignment="Top"/>
+
+        <dx:SimpleButton x:Name="btn_eInvoices" HorizontalAlignment="Left" Margin="38,786,0,0" VerticalAlignment="Top" Height="53" Width="75" Glyph="/Resources/System/einvoice1.png" BorderThickness="0,0,0,0"/>
+        <Label Content="E-Invoices" HorizontalAlignment="Left" Margin="131,804,0,0" VerticalAlignment="Top"/>
+
+        <dx:SimpleButton x:Name="btn_backOffice" HorizontalAlignment="Left" Margin="38,843,0,0" VerticalAlignment="Top" Height="53" Width="75" Glyph="/Resources/System/backoffice1.png" BorderThickness="0,0,0,0"/>
+        <Label Content="BackOffice" HorizontalAlignment="Left" Margin="131,855,0,0" VerticalAlignment="Top"/>
+
+        <!-- Bottom Side -->
+        <dx:SplitButton x:Name="btn_dailyPayments" Content="Daily Payments" HorizontalAlignment="Left" Margin="394,596,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_vendorsSettlements" Content="Vendors Settlements" HorizontalAlignment="Left" Margin="394,857,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton Content="Low Selling Vendors" HorizontalAlignment="Left" Margin="394,806,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_bestSellingVendors" Content="Best Selling Vendors" HorizontalAlignment="Left" Margin="394,754,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_salesByVendor" Content="Sales By Vendor" HorizontalAlignment="Left" Margin="394,702,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_bestSellingItems" Content="Best Selling Items" HorizontalAlignment="Left" Margin="394,649,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_profitAndLoss" Content="Profit and Loss" HorizontalAlignment="Left" Margin="641,596,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_clientsSettlements" Content="Clients Settlements" HorizontalAlignment="Left" Margin="641,857,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_lowSellingClients" Content="Low Selling Clients" HorizontalAlignment="Left" Margin="641,806,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_bestSellingClients" Content="Best Selling Clients" HorizontalAlignment="Left" Margin="641,754,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_salesByClient" Content="Sales By Client" HorizontalAlignment="Left" Margin="641,702,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_lowSellingItems" Content="Low Selling Items" HorizontalAlignment="Left" Margin="641,649,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_itemsProfit" Content="Items Profit" HorizontalAlignment="Left" Margin="888,596,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_itemsExpiration" Content="Items Expiration" HorizontalAlignment="Left" Margin="888,857,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_itemsList" Content="Items List" HorizontalAlignment="Left" Margin="888,806,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_taxReport" Content="Tax Report" HorizontalAlignment="Left" Margin="888,754,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_itemsInventory" Content="Items Inventory" HorizontalAlignment="Left" Margin="888,702,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+        <dx:SplitButton x:Name="btn_itemsMovement" Content="Items Movement" HorizontalAlignment="Left" Margin="888,649,0,0" VerticalAlignment="Top" Height="48" Width="242"/>
+
+
+    </Grid>
+
+
+</Window>

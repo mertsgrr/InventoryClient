@@ -1,0 +1,21 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventoryClient.Views"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" x:Class="InventoryClient.Views.LoginWindow"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="450"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="lblUsername" Content="Username" HorizontalAlignment="Center" Margin="0,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.115,0.931" Width="158"/>
+        <dxe:TextEdit x:Name="txtUsername" HorizontalAlignment="Center" Margin="0,185,0,0" VerticalAlignment="Top" Width="158"/>
+
+        <Label x:Name="lblPassword" Content="Password" HorizontalAlignment="Center" Margin="0,224,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.115,0.931" Width="158"/>
+
+        <dx:SimpleButton x:Name="btnLogin" Content="LOGIN" HorizontalAlignment="Center" Height="36" Margin="0,290,0,0" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.491,-0.01" Click="btnLogin_Click"/>
+        <dxe:PasswordBoxEdit x:Name="txtPassword" HorizontalAlignment="Center" Margin="0,255,0,0" VerticalAlignment="Top" Width="158"/>
+    </Grid>
+</Window>
