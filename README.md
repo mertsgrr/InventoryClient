@@ -1,1 +1,1 @@
-# InventoryClient_V2
+# InventoryClient
