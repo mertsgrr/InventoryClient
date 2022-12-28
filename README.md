@@ -16,7 +16,7 @@ There are many great README templates available on GitHub; however, I didn't fin
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
-* ![DevExpress]([https://img.shields.io/badge/DevExpress?style=for-the-badge&logo=appveyor](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)
+* ![DevExpress](https://img.shields.io/badge/DevExpress?style=for-the-badge&logo=appveyor](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
