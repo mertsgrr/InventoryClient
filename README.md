@@ -19,11 +19,11 @@ local machine for development and testing purposes.
 ### Prerequisites
 * PostgreSQL
 * DevExpress v22
-* Visual Studio 2022
+* Visual Studio 2022 (.NET desktop development workload)
 
 <!-- ROADMAP -->
 ## Features
-- [x] User Management Panel (List/Add/Remove/Update/Making Active-Passive/Suspension)
+- [x] User Management Panel (List/Add/Remove/Update/Active-Passive/Suspend)
 - [x] Inventory Modules (Daily-Weekly-Monthly Reports/Product Stats)
 - [x] Multi-Language
     - [x] English
