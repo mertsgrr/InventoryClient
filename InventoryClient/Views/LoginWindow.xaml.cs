@@ -1,13 +1,18 @@
 ﻿using InventoryClient.Models;
 using System.Linq;
 using System.Windows;
-using System.Windows.Forms;
 using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace InventoryClient.Views
 {
     public partial class LoginWindow : Window
     {
+        private readonly UserContext _context;
+
+        public LoginWindow(UserContext context)
+        {
+            _context = context;
+        }
         public LoginWindow()
         {
             InitializeComponent();
@@ -15,10 +20,7 @@ namespace InventoryClient.Views
 
         public Admin GetUserSingleRecord(string username, string password)
         {
-            using (UserContext _context = new UserContext())
-            {
-                return _context.Admins.FirstOrDefault(u => u.Username == username && u.Password == password && u.IsActive == 1 && u.IsAdmin == 1);
-            }
+            return _context.Admins.FirstOrDefault(u => u.Username == username && u.Password == password && u.IsActive == 1 && u.IsAdmin == 1);
         }
 
 

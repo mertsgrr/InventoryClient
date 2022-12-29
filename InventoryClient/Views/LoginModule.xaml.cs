@@ -1,25 +1,22 @@
-﻿using InventoryClient.Models;
+﻿using DevExpress.Mvvm.POCO;
+using InventoryClient.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
+using System.CodeDom;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace InventoryClient.Views
 {
-    /// <summary>
-    /// Interaction logic for LoginModule.xaml
-    /// </summary>
     public partial class LoginModule : Window
     {
+        private readonly UserContext _context;
+        public LoginModule(UserContext context)
+        {
+            _context = context;
+        }
+
         public LoginModule()
         {
             InitializeComponent();
@@ -35,15 +32,51 @@ namespace InventoryClient.Views
         
         public Data GetAppInfo()
         {
-            using (UserContext _context = new UserContext())
+            try
             {
-                return _context.Datas.Single(x => x.CurrentRelease == 1);
+                using (var _context = new UserContext())
+                {
+                    return _context.Datas.Single(x => x.CurrentRelease == 1);
+                }
+            }
+            catch
+            {
+
+                Data errorData = new Data
+                {
+                    Id = 0,
+                    CurrentRelease = 0,
+                    ReleaseDate = DateTime.Now,
+                    Version = "0",
+                    VersionName = ""
+                };
+
+                return errorData;
+
             }
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                using (var _context = new UserContext())
+                {
+                    _context.Database.MigrateAsync().Wait();
+                }
+            }catch(IOException errorMessage2)
+            {
+                MessageBox.Show(errorMessage2.Message);
+            }
+            
+
             Data appData = GetAppInfo();
+
+            if(appData.Id == 0)
+            {
+                MessageBox.Show("Versioning issue, please contact system admin.");
+                this.Close();
+            }
 
             if(appData != null)
             {
