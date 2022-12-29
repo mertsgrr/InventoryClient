@@ -5,8 +5,6 @@
 
 This project includes a POS software and the management panel of it.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 * ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
 * ![DevExpress](https://img.shields.io/badge/DevExpress-FF7200?style=for-the-badge&logo=devexpress&logoColor=white)
@@ -31,12 +29,9 @@ local machine for development and testing purposes.
     - [x] English
     - [x] Turkish
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTACT -->
 ## Contact
 
 Mert Sağır - wertsagir@gmail.com
 Project Link: [https://github.com/mertsgrr/InventoryClient](https://github.com/mertsgrr/InventoryClient)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
