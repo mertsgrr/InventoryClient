@@ -7,7 +7,7 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" x:Class="InventoryClient.Views.GeneralSettingsWindow"
         mc:Ignorable="d"
         Title="GeneralSettingsWindow" 
-        Height="450" 
+        Height="600" 
         Width="800"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
@@ -17,27 +17,37 @@
             <dx:DXTabItem Header="System Settings">
                 <Grid Background="#00000000">
                     <Label Content="Database Path" HorizontalAlignment="Left" Margin="21,26,0,0" VerticalAlignment="Top"/>
-                    <Label Content="Company Name" HorizontalAlignment="Left" Margin="21,62,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Company Name" HorizontalAlignment="Left" Margin="21,269,0,0" VerticalAlignment="Top"/>
                     <dxe:TextEdit HorizontalAlignment="Left" Margin="122,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.7,-0.316" Width="626"/>
-                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,62,0,0" VerticalAlignment="Top" Width="244"/>
-                    <Label Content="Foreign Name" HorizontalAlignment="Left" Margin="378,62,0,0" VerticalAlignment="Top"/>
-                    <dxe:TextEdit HorizontalAlignment="Left" Margin="495,62,0,0" VerticalAlignment="Top" Width="253"/>
-                    <Label Content="Company Address" HorizontalAlignment="Left" Margin="21,99,0,0" VerticalAlignment="Top"/>
-                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,99,0,0" VerticalAlignment="Top" Width="244"/>
-                    <Label Content="Foreign Cmpny Add." HorizontalAlignment="Left" Margin="378,99,0,0" VerticalAlignment="Top" Width="139"/>
-                    <dxe:TextEdit HorizontalAlignment="Left" Margin="495,99,0,0" VerticalAlignment="Top" Width="253"/>
-                    <Label Content="Phone Number" HorizontalAlignment="Left" Margin="21,136,0,0" VerticalAlignment="Top"/>
-                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,136,0,0" VerticalAlignment="Top" Width="244"/>
-                    <Label Content="Mobile Number" HorizontalAlignment="Left" Margin="378,136,0,0" VerticalAlignment="Top"/>
-                    <dxe:TextEdit HorizontalAlignment="Left" Margin="495,136,0,0" VerticalAlignment="Top" Width="253"/>
-                    <Label Content="VAT" HorizontalAlignment="Left" Margin="21,170,0,0" VerticalAlignment="Top"/>
-                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,170,0,0" VerticalAlignment="Top" Width="244"/>
-                    <Label Content="Registration Number" HorizontalAlignment="Left" Margin="378,170,0,0" VerticalAlignment="Top"/>
-                    <dxe:TextEdit HorizontalAlignment="Left" Margin="495,170,0,0" VerticalAlignment="Top" Width="253"/>
-                    <Label Content="E-Mail" HorizontalAlignment="Left" Margin="21,208,0,0" VerticalAlignment="Top"/>
-                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,208,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.7,-0.316" Width="626"/>
-                    <Label Content="Company Logo" HorizontalAlignment="Left" Margin="21,247,0,0" VerticalAlignment="Top"/>
-                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.7,-0.316" Width="626"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,269,0,0" VerticalAlignment="Top" Width="244"/>
+                    <Label Content="Foreign Name" HorizontalAlignment="Left" Margin="378,269,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="495,269,0,0" VerticalAlignment="Top" Width="253"/>
+                    <Label Content="Company Address" HorizontalAlignment="Left" Margin="21,306,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,306,0,0" VerticalAlignment="Top" Width="244"/>
+                    <Label Content="Foreign Cmpny Add." HorizontalAlignment="Left" Margin="378,306,0,0" VerticalAlignment="Top" Width="139"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="495,306,0,0" VerticalAlignment="Top" Width="253"/>
+                    <Label Content="Phone Number" HorizontalAlignment="Left" Margin="21,343,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,343,0,0" VerticalAlignment="Top" Width="244"/>
+                    <Label Content="Mobile Number" HorizontalAlignment="Left" Margin="378,343,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="495,343,0,0" VerticalAlignment="Top" Width="253"/>
+                    <Label Content="VAT" HorizontalAlignment="Left" Margin="21,377,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,377,0,0" VerticalAlignment="Top" Width="244"/>
+                    <Label Content="Registration Number" HorizontalAlignment="Left" Margin="378,377,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="495,377,0,0" VerticalAlignment="Top" Width="253"/>
+                    <Label Content="E-Mail" HorizontalAlignment="Left" Margin="21,415,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,415,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.7,-0.316" Width="626"/>
+                    <Label Content="Company Logo" HorizontalAlignment="Left" Margin="21,454,0,0" VerticalAlignment="Top"/>
+                    <dxe:TextEdit HorizontalAlignment="Left" Margin="122,454,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.7,-0.316" Width="626"/>
+
+                    <Grid>
+                        <dxlc:GroupBox HorizontalAlignment="Left" Margin="126,66,0,0" VerticalAlignment="Top" Height="190" Width="619">
+                            <Label x:Name="lbl_fileName" Content="File Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                        </dxlc:GroupBox>
+                        <Label x:Name="lblDatabaseBackup" Content="Backup Database" HorizontalAlignment="Left" Margin="20,148,0,0" VerticalAlignment="Top"/>
+                        <dx:SimpleButton x:Name="btnDatabaseBackup" Content="BACKUP" HorizontalAlignment="Left" Height="44" Margin="145,170,0,0" VerticalAlignment="Top" Width="242" Click="btnDatabaseBackup_Click"/>
+                    </Grid>
+                    <dxe:TextEdit x:Name="txtBackupFileName" HorizontalAlignment="Left" Margin="145,129,0,0" VerticalAlignment="Top" Width="242" Height="30"/>
+
                 </Grid>
             </dx:DXTabItem>
             <dx:DXTabItem Header="Inventory Settings">

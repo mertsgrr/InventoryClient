@@ -84,5 +84,13 @@ namespace InventoryClient.Views
                 lblCurrentVersion.Content= "Version : " + appVersion;
             }
         }
+
+        PosWindow posWindow;
+        private void btnPOS_Click(object sender, RoutedEventArgs e)
+        {
+            posWindow= new PosWindow();
+            posWindow.Show();
+            this.Hide();
+        }
     }
 }

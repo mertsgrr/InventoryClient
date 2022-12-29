@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -16,14 +14,16 @@ using System.Windows.Shapes;
 
 namespace InventoryClient.Views
 {
-    public partial class GeneralSettingsWindow : Window
+    public partial class PosWindow : Window
     {
-        public GeneralSettingsWindow()
+        public PosWindow()
         {
             InitializeComponent();
         }
-        private void btnDatabaseBackup_Click(object sender, RoutedEventArgs e)
+
+        private void btnPosDashboard_Click(object sender, RoutedEventArgs e)
         {
+
         }
     }
 }

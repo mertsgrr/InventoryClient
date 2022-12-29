@@ -20,7 +20,10 @@ namespace InventoryClient.Views
 
         public Admin GetUserSingleRecord(string username, string password)
         {
-            return _context.Admins.FirstOrDefault(u => u.Username == username && u.Password == password && u.IsActive == 1 && u.IsAdmin == 1);
+            using (var _context = new UserContext())
+            {
+                return _context.Admins.FirstOrDefault(u => u.Username == username && u.Password == password && u.IsActive == 1 && u.IsAdmin == 1);
+            }
         }
 
 

@@ -8,6 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Pos\cashdrawer1.png" />
+    <None Remove="Resources\Pos\closingDaily1.png" />
+    <None Remove="Resources\Pos\dailyItems1.png" />
+    <None Remove="Resources\Pos\dailyReport1.png" />
+    <None Remove="Resources\Pos\dashboard1.png" />
+    <None Remove="Resources\Pos\itemsInventory1.png" />
+    <None Remove="Resources\Pos\mainCategories1.png" />
+    <None Remove="Resources\Pos\roomsTables1.png" />
+    <None Remove="Resources\Pos\salesInvoice1.png" />
+    <None Remove="Resources\Pos\salesReturn1.png" />
+    <None Remove="Resources\Pos\settings1.png" />
+    <None Remove="Resources\Pos\touchKeyboard1.png" />
     <None Remove="Resources\System\activatelicense1.png" />
     <None Remove="Resources\System\backoffice1.png" />
     <None Remove="Resources\System\cashdrawer1.png" />
@@ -33,6 +45,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="devexpress.wpf.controls" Version="22.1.3" />
+    <PackageReference Include="devexpress.wpf.grid.core" Version="22.1.3" />
     <PackageReference Include="devexpress.wpf.layoutcontrol" Version="22.1.3" />
     <PackageReference Include="devexpress.wpf.ribbon" Version="22.1.3" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
@@ -51,6 +65,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Pos\cashdrawer1.png" />
+    <Resource Include="Resources\Pos\closingDaily1.png" />
+    <Resource Include="Resources\Pos\dailyItems1.png" />
+    <Resource Include="Resources\Pos\dailyReport1.png" />
+    <Resource Include="Resources\Pos\dashboard1.png" />
+    <Resource Include="Resources\Pos\itemsInventory1.png" />
+    <Resource Include="Resources\Pos\mainCategories1.png" />
+    <Resource Include="Resources\Pos\roomsTables1.png" />
+    <Resource Include="Resources\Pos\salesInvoice1.png" />
+    <Resource Include="Resources\Pos\salesReturn1.png" />
+    <Resource Include="Resources\Pos\settings1.png" />
+    <Resource Include="Resources\Pos\touchKeyboard1.png" />
     <Resource Include="Resources\System\activatelicense1.png" />
     <Resource Include="Resources\System\backoffice1.png" />
     <Resource Include="Resources\System\cashdrawer1.png" />
@@ -77,6 +103,7 @@
 
   <ItemGroup>
     <Folder Include="Migrations\User\" />
+    <Folder Include="DatabaseBackup\" />
   </ItemGroup>
 
 </Project>

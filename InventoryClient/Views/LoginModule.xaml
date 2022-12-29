@@ -4,14 +4,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InventoryClient.Views"
-        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" x:Class="InventoryClient.Views.LoginModule"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" x:Class="InventoryClient.Views.LoginModule"
         mc:Ignorable="d"
-        Title="Inventory Client - Login" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="Inventory Client - Login" 
+        Height="450" 
+        Width="820" 
+        Loaded="Window_Loaded"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-
         <dx:SimpleButton x:Name="btnInventory" Cursor="Hand" Content="Inventory Client" HorizontalAlignment="Left" Height="252" Margin="40,42,0,0" VerticalAlignment="Top" Width="331" Glyph="/Resources/System/inventory1.png" GlyphAlignment="Top" Click="btnInventory_Click"/>
-        <dx:SimpleButton x:Name="btnPOS" Cursor="Hand" Content="P.O.S" HorizontalAlignment="Left" Height="252" Margin="435,42,0,0" VerticalAlignment="Top" Width="331" GlyphAlignment="Top" Glyph="/Resources/System/pos1.png"/>
-        <Label x:Name="lblCurrentVersion" HorizontalAlignment="Left" Margin="59,355,0,0" VerticalAlignment="Top" Width="215" Content="Empty"/>
-
+        <dx:SimpleButton x:Name="btnPOS" Cursor="Hand" Content="P.O.S" HorizontalAlignment="Left" Height="252" Margin="446,42,0,0" VerticalAlignment="Top" Width="331" GlyphAlignment="Top" Glyph="/Resources/System/pos1.png" Click="btnPOS_Click"/>
+        <Label x:Name="lblCurrentVersion" HorizontalAlignment="Left" Margin="40,335,0,0" VerticalAlignment="Top" Width="215" Content="Empty"/>
+        <dxb:StatusBarControl x:Name="barFooter" HorizontalAlignment="Center" Margin="0,385,0,0" Width="820" Background="#FF0FB2E9" Height="49"/>
+        <Label x:Name="lblCopyright" Content="Empty" HorizontalAlignment="Center" Margin="0,385,0,0" VerticalAlignment="Top" Height="27" Width="556" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Foreground="White"/>
     </Grid>
+    
 </Window>

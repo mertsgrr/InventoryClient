@@ -29,6 +29,5 @@ namespace InventoryClient.Models
             optionsBuilder.UseNpgsql("Server=127.0.0.1:5432;Database=InventoryClientDb;UserId=postgres;Password=admin");
         }
         #endregion
-        
     }
 }
